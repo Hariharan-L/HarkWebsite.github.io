@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="login.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="drop">
+        <div class="content">
+          <h2>Log in</h2>
+          <form action="login.php" method="POST">
+            <div class="inputBox" id="user">
+              <input type="text" name="username" placeholder="Username" required="">
+            </div>
+            <div class="inputBox" id="user">
+              <input type="password" name="password" placeholder="Password" required="">
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="login">
+            </div>
+          </form>
+        </div>
+      </div>
+      <a href="forgot.html" class="btns">Forgot Password</a>
+      <a href="signup.html" class="btns signup">Signup</a>
+    </div>
+  </body>
