@@ -3,6 +3,8 @@
  
 * THIS WEBPAGE YOU CAN EXPLORE ALL THE GAMES, WHICH IS AVILABLE IN ANY STORES.
 
-* THIS WESITE IS HIGHLY DEPEND'S ON '''CSS,HTML'''.
+* THIS WESITE IS HIGHLY DEPEND'S ON.
+ 
+'''html,css'''
      
 * HERE IS THE LINK- https://hariharan-l.github.io/HarkWebsite.github.io/
