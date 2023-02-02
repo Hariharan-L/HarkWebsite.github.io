@@ -1,45 +1,23 @@
 *
 {
+  scroll-behavior: smooth;
   margin: 0;
   font-family: 'poppins', sans-serif;
 }
 /*body*/
 body
 {
-  min-height: 390vh;
   background: #eff0f4;
   height: 100%;
   justify-content: flex-end;
   align-items: flex-end;
   overflow-x: hidden;
 }
-/*Scroll bar side*/
-::-webkit-scrollbar
-{
-  width: 15px;
-}
-::-webkit-scrollbar-thumb
-{
-  background: #bfbfbf;
-  border-radius: 7px;
-}
 p
 {
   position: relative;
   clear: right;
-}/*
-button
-{
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #fff;
-  font-weight: bold;
-  width: 100px;
-  margin-bottom: 5px;
-  border-radius: 5px;
 }
-/*Header*/
 
 header
 {
@@ -54,9 +32,11 @@ header
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+  transition: 0.8s;
 }
 header .logo
 {
+  display: flex;
   padding-bottom: 15px;
   padding-left: 28px;
   color: #fff;
@@ -92,7 +72,186 @@ header ul li a.active
   color: #2b1055;
 }
 /*Section*/
-
+section
+{
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+section #main
+{
+  display: flex;
+}
+#exp a
+{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  overflow: hidden;
+  transition: 0.2s;
+}
+#exp a:hover
+{
+  background: #09fbd3;
+  box-shadow: 0 0 10px #09fbd3,0 0 40px #09fbd3,0 0 20px #09fbd3;
+  border-radius: 40px;
+  transition-delay: 0.1s;
+}
+#exp 
+{
+  position: relative;
+  color: #fff;
+  background: url("img/ft.png");
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 700px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.3em;
+  color: #fff;
+}
+#hack
+{
+  background: url("img/bs-2.jpg");
+  background-size: cover;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-left: 900px;
+  padding-bottom: 100px;
+  font-size: 1.3em;
+  color: #000;
+}
+h2
+{
+  font-family: 'Roboto', sans-serif;
+  transition: 0.5s;
+  transform-origin: left;
+  letter-spacing: 1px;
+}
+/*Water drops*/
+.containers
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: warp;
+  padding: 50px 0;
+  gap: 40px 60px;
+}
+.containers #ks
+{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0,0.05),
+  25px 35px 20px rgba(0,0,0,0.05),
+  25px 35px 30px rgba(0,0,0,0.05),
+  inset -20px -20px 25px rgba(225,225,225,0.9);
+  transition: 0.5s ease-in-out;
+  overflow: drop;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containers #ks:nth-child(1)
+{
+  border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+.containers #ks:nth-child(2)
+{
+  border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
+}
+.containers #ks:nth-child(3)
+{
+  border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}
+.containers #ks:hover
+{
+  border-radius: 50%;
+}
+.containers #ks::before
+{
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.containers #ks::after
+{
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.containers #ks .content
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  gap: 15px;
+}
+.containers #ks .content::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.containers #ks .content h2
+{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #eff0f4;
+  border-radius: 50%;
+  box-shadow: inset  2px 5px 10px rgba(0, 0, 0,0.1),
+  inset -2px -5px 10px rgba(225,225,225,1),
+  15px 15px 10px rgba(0,0,0,0.05),
+  15px 10px 15px rgba(0,0,0,0.025);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: var(--clr);
+}
 /*Footer*/
 .text
 {
@@ -123,7 +282,7 @@ a:focus{
  
  
 .footer{
-  text-decoration: none;
+    text-decoration: none;
     position: sticky;
     top: 100%;
     background: #111111;
@@ -253,18 +412,96 @@ a:focus{
 }
 @media (min-width: 1101px) and (max-width: 1500px)
 {
-
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 500px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#hack
+{
+  background: url("img/bs-2.jpg");
+  background-size: cover;
+  color: #fff;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-left: 600px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
 }
 
 
 /**************desktop version*********************/
 @media (min-width: 992px) and (max-width: 1100px)
 {
-
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 200px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#hack
+{
+  background: url("img/bs-2.jpg");
+  background-size: cover;
+  color: #fff;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#exp
+{
+  background: url("img/ft.png");
+  background-position: center;
+}
 }
 /*********tablet version**********/
 @media (min-width: 768px) and (max-width: 991px) 
 {
+.containers #ks:nth-child(3)
+{
+  align-items: center;
+}
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 150px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#hack
+{
+  background: url("img/bs-2.jpg");
+
+  background-size: cover;
+  color: #fff;
+  padding-right: 50px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#exp a
+{
+  padding: 15px 25px;
+  border-radius: 40px;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+}
 header .logo
 {
   color: #fff;
@@ -274,6 +511,12 @@ header .logo
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+#exp 
+{
+  background: url("img/ft.png");
+  background-position-x: 50%;
+  background-position-y: 25%;
+}
 }
 
 /***************mobile version******************/
@@ -281,16 +524,67 @@ header .logo
 {
 header ul
 {
-  margin-top: 10px;
+  margin-top: 1px;
   padding-left: 5px;
 }
 header
 {
-  clip-path: polygon(0 0%,100% 0, 90% 100%, 10% 100%);
-  position: relative;
+  clip-path: polygon(0 0%,100% 0, 88% 100%, 10% 100%);
+  position: fixed;
   display:inline-table;
   align-items: center;
-  text-align: center;
+  text-align: bottom;
+}
+header .logo
+{
+  justify-content: center;
+}
+#exp
+{
+  background: url("img/ft.png");
+  position: relative;
+  background-position: center;
+}
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#hack
+{
+  background: url("img/bs-2.jpg");
+  background-size: cover;
+  color: #fff;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+.containers
+{
+  position: relative;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: warp;
+  padding: 12%;
+}
+div .containers
+{
+  align-items: center;
+}
+#exp a
+{
+  padding: 13px 16px;
+  border-radius: 40px;
+  font-size: 18px;
+  letter-spacing: 0.6px;
 }
 header .logo
 {
