@@ -110,6 +110,7 @@ section #main
   position: relative;
   color: #fff;
   background: url("img/ft.png");
+  background: no-repeat;
   background-size: cover;
   width: 100%;
   height: 120vh;
