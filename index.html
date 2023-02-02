@@ -21,9 +21,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
     <body>
-      <header class="sticky">
-        <a href="#" class="logo" id="count">hark</a>
-        <!--<button id="increment" onclick="increment()">count</button>-->
+      <header id="onload" class="nav-down">
+        <a href="#" class="logo">hark</a>
         <ul >
           <li><a href="#" class="active" title="Home">Home</a></li>
           <li><a href="about.html" title="About">About</a></li>
@@ -81,6 +80,7 @@
           </div>
         </div>
       </section>
+      <div id="react"></div>
       <footer class="footer">
         <div class="container">
             <div class="row">
@@ -150,8 +150,15 @@
                 </div>
               </div>
     </footer>
+    <script type="text/javascript" src="index.js"></script>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="react.js"></script>
     <!-- Bootstrap Js Cdn -->
-    <script src="index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -160,6 +167,5 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
       <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-      <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
