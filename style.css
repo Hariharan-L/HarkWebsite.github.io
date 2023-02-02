@@ -112,7 +112,7 @@ section #main
   background: url("img/ft.png");
   background-size: cover;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   right: 0;
   bottom: 0;
   top: 0;
@@ -515,7 +515,7 @@ header .logo
 {
   background: url("img/ft.png");
   background-position-x: 50%;
-  height:100vh
+  max-height: 100vh;
 }
 }
 
