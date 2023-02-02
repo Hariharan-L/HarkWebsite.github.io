@@ -515,7 +515,7 @@ header .logo
 {
   background: url("img/ft.png");
   background-position-x: 50%;
-  max-height: 80vh;
+  height: 80vh;
 }
 }
 
