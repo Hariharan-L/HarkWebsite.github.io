@@ -9,6 +9,7 @@ body
 {
   height: auto;
   overflow-x: hidden;
+  background-color:#000;
 }
 .games
 {
