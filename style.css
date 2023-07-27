@@ -1,0 +1,628 @@
+*
+{
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+}
+/*body*/
+body
+{
+  background: #000;
+  height: 100%;
+  overflow-x: hidden;
+}
+p
+{
+  position: relative;
+  clear: right;
+}
+.hamburger{
+  display: none;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+header
+{
+  position: fixed;
+  background-color: #000;
+  clip-path: polygon(0 0%,100% 0, 96% 100%, 4% 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 15px 5px 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  transition: 0.8s;
+}
+header .logo
+{
+  display: flex;
+  padding-bottom: 15px;
+  padding-left: 38px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+header ul li
+{
+  list-style: none;
+  margin-left: 15px;
+}
+header ul li a
+{
+  text-decoration: none;
+  padding: 6px 20px;
+  color: #fff;
+  border-radius: 16px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+  background: #fff;
+  color: #2b1055;
+}
+/*Section*/
+section
+{
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+section #main
+{
+  display: flex;
+}
+#exp a
+{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+  background-color: #8f1ab9;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  align-items:  center;
+  justify-content: center;
+  justify-items: center;
+  margin-right: 50px;
+}
+.play{
+  margin-left: 50px;
+}
+#exp i{
+  margin-left: 10px;
+}
+#exp 
+{
+  position: relative;
+  color: #fff;
+  background: url("img/fortniteisland.webp");
+  background-size: cover;
+  width: 100%;
+  height: 115vh;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#exp i:hover{
+  color: #02ff78;
+}
+#exp a:hover{
+  color: #02ff78;
+}
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 700px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.3em;
+  color: #fff;
+}
+#hack
+{
+  background: url("img/fortniteisland2.webp");
+  background-size: cover;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-left: 900px;
+  padding-bottom: 100px;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+h2
+{
+  font-family: 'Roboto', sans-serif;
+  transition: 0.5s;
+  transform-origin: left;
+  letter-spacing: 1px;
+}
+/*
+#fade {
+  transition: all 1s;
+  opacity: 0;
+  position: fixed;
+  display: none;
+  top: 100px;
+  color: #fff;
+  margin-right: 50%;
+  padding: 100px;
+  font-size: 1.5rem;
+}
+
+#fade.visible {
+  opacity: 1;
+  display: block;
+} */
+#fade{
+  margin-right: 50%;
+  top: 100px;
+  padding: 100px;
+}
+#left-align{
+  margin-left: 50%;
+  top: 100px;
+  padding: 100px;
+}
+#right-align{
+  margin-right: 50%;
+  top: 100px;
+  padding: 100px;
+}
+.circle{
+  background-color: #fff;
+  position: absolute;
+  width: 2%;
+  height: 1%;
+  border-radius: 50%;
+  margin-left: 49%;
+  margin-top: 150px;
+  z-index: 10;
+}
+.scroll-long{
+  height: 1200px;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #000;
+}
+#line::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 30%;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+  animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 30%;
+  }
+}
+/*Footer*/
+.text
+{
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 0 15px 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding-left: 0;
+}
+ 
+input:focus{
+    outline: none;
+}
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+}
+ 
+ 
+.footer{
+    text-decoration: none;
+    position: sticky;
+    top: 100%;
+    background: #111111;
+    padding-top: 70px;
+}
+.footer .row 
+{
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.footer-about{
+    margin-bottom: 30px;
+}
+.footer-about .footer-logo{
+    margin-bottom: 30px;
+}
+.footer-about p{
+    color: #b7b7b7;
+    margin-bottom: 30px;
+}
+.sci
+{
+  margin-top: 20px;
+  display: flex;
+}
+.sci li
+{
+  list-style: none;
+}
+.sci li a
+{
+  width: 40px;
+  height: 40px;
+  color: #000;
+  margin: 0 9px;
+  padding: 15px 20px;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+}
+.footer-about h6
+{
+  color: #fff;
+  word-spacing: 2px;
+  margin-right: 0;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #65676a;
+}
+.footer-about a:hover
+{
+  color: #fff;
+  background: #000;
+}
+.footer-widget{
+    margin-bottom: 30px;
+}
+.footer-widget h6{
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.footer-widget ul li{
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 36px;
+    list-style: none;
+}
+.footer-widget ul li a{
+  transition: all 0.3s ease;
+    color: #b7b7b7;
+    font-size: 15px;
+}
+.footer-widget ul li a:hover{
+  padding: 10px;
+    color: #fff;
+}
+.footer-widget .footer-newslatter p{
+    color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form{
+    position: relative;
+}
+.footer-widget .footer-newslatter form input
+{
+    width: 100%;
+    font-size: 15px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    overflow: hidden;
+    border-bottom: 2px solid #ffffff;
+}
+.footer-widget .footer-newslatter form input::placeholder{
+    color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form button{
+    color: #b7b7b7;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+.footer-copyright-text{
+    border-top: 0.1px solid;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.footer-copyright-text p{
+    color: #b7b7b7;
+    margin-bottom: 0;
+}
+.footer-copyright-text p i{
+    color: #217af8;
+}
+.footer-copyright-text p a{
+    color: #217af8;
+}
+.loader-container
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 70%;
+}
+.loader-container img
+{
+  width: 3rem;
+}
+.loader-container.fade-out
+{
+  top: 110%;
+}
+@media (min-width: 1101px) and (max-width: 1500px)
+{
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 500px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#hack
+{
+  background: url("img/fortniteisland2.webp");
+  background-size: cover;
+  color: #fff;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-left: 600px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+}
+
+
+/**************desktop version*********************/
+@media (min-width: 992px) and (max-width: 1100px)
+{
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 200px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#hack
+{
+  background: url("img/fortniteisland2.webp");
+  background-size: cover;
+  color: #fff;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#exp
+{
+  background: url("img/fortniteisland.webp");
+  background-position: center;
+}
+}
+/*********tablet version**********/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 150px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#hack
+{
+  background: url("img/fortniteisland2.webp");
+
+  background-size: cover;
+  color: #fff;
+  padding-right: 50px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#exp a
+{
+  padding: 15px 25px;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+}
+header .logo
+{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#exp 
+{
+  background: url("img/fortniteisland.webp");
+  background-position-x: 50%;
+  width: 100%;
+  max-height: 100vh;
+}
+}
+
+/***************mobile version******************/
+@media (max-width: 767px) 
+{
+.hamburger{
+  display: block;
+  padding-bottom: 10px;
+  left: 0;
+}
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+.hamburger.active .bar:nth-child(4){
+  opacity: 0;
+}
+.nav-menu{
+  position: fixed;
+  top: -100%;
+  /* top: 70px; */
+  gap: 0;
+  left: 0;
+  flex-direction: column;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.nav-item{
+  margin: 16px 0;
+}
+.nav-menu.active{
+  top: 0;
+}
+header ul
+{
+  margin-top: 1px;
+  padding-left: 5px;
+}
+header
+{
+  clip-path: circle(100%);
+  position: fixed;
+  display:inline-table;
+  overflow-x: hidden;
+  display: flex;
+  width: 100%;
+}
+#exp
+{
+  background: url("img/fortniteisland.webp");
+  position: relative;
+  background-position: center;
+}
+#cyber
+{
+  background: url("img/fortnite.jpg");
+  background-size: cover;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#hack
+{
+  background: url("img/fortniteisland2.webp");
+  background-size: cover;
+  color: #fff;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#exp a
+{
+  padding: 13px 16px;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+}
+header .logo
+{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+footer
+{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.footer .row
+{
+  padding: 0;
+}
+}
+
