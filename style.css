@@ -524,6 +524,12 @@ header .logo
 /***************mobile version******************/
 @media (max-width: 767px) 
 {
+html,body{
+  overflow-x: hidden;
+}
+.scroll-long{
+  display: none;
+}
 .hamburger{
   display: block;
   padding-bottom: 10px;
