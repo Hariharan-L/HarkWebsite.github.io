@@ -608,6 +608,7 @@ header
 }
 #exp a
 {
+  left: 20px;
   padding: 13px 16px;
   font-size: 13px;
   letter-spacing: 0.6px;
